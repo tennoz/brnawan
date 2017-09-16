@@ -13,24 +13,24 @@ class UploadFileController extends Controller {
       $file = $request->file('image');
       
       
-      //Display File Name
-      echo 'File Name: '.$file->getClientOriginalName();
-      echo '<br>';
+      // //Display File Name
+      // echo 'File Name: '.$file->getClientOriginalName();
+      // echo '<br>';
    
-      //Display File Extension
-      echo 'File Extension: '.$file->getClientOriginalExtension();
-      echo '<br>';
+      // //Display File Extension
+      // echo 'File Extension: '.$file->getClientOriginalExtension();
+      // echo '<br>';
    
-      //Display File Real Path
-      echo 'File Real Path: '.$file->getRealPath();
-      echo '<br>';
+      // //Display File Real Path
+      // echo 'File Real Path: '.$file->getRealPath();
+      // echo '<br>';
    
-      //Display File Size
-      echo 'File Size: '.$file->getSize();
-      echo '<br>';
+      // //Display File Size
+      // echo 'File Size: '.$file->getSize();
+      // echo '<br>';
    
-      //Display File Mime Type
-      echo 'File Mime Type: '.$file->getMimeType();
+      // //Display File Mime Type
+      // echo 'File Mime Type: '.$file->getMimeType();
    
       //Move Uploaded File
       $destinationPath = 'uploads';
@@ -39,5 +39,6 @@ class UploadFileController extends Controller {
       \DB::table('files')->insert(
        ['file_name' => $file->getClientOriginalName()]
    );
+      return redirect('table');
    }
 }

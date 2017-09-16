@@ -1,193 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php echo View::make('header'); ?>
 
-<head>
-    <meta charset="utf-8">
-    <!--    internet explorer compatibility meta-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--    first mobile meta-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BRNAWAN</title>
-    <!--    bootstrap-->
-    <link rel="stylesheet" href="css/bootstrap-arabic.min.css">
-    <!--    fontawesome-->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!--	opensasn fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
-    <!--    lightbox-->
-    <link rel="stylesheet" href="css/lightbox.min.css">
-    <!--    my stylesheet-->
-    <link rel="stylesheet" href="css/style.css"> </head>
-<!--[if lt IE 9]>
-    <script src="js/html5shiv.min.js"></script>
-    <script src="js/respond.min.js"></script>
-<![endif]-->
-
-<body>
-    <!-- start header -->
-    <div class="top-site">
-        
-    <header>
-        <!-- start navbar -->
-        <div class="container">
-            <div class="row">
-                <!--               social media just show at mobile version-->
-                <div class="col-xs-6 col-xs-offset-3 visible-xs">
-                    <ul class="list-inline ">
-                        <li>
-                            <a href="#"><img class="social img-responsive" src="images/social/1.png" alt=""></a>
-                        </li>
-                        <li>
-                            <a href="#"><img class="social img-responsive" src="images/social/2.png" alt=""></a>
-                        </li>
-                        <li>
-                            <a href="#"><img class="social img-responsive" src="images/social/3.png" alt=""></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!--------------------------------------->
-            <!--           start main navbar-->
-            <nav class="navbar navbar-default">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">الصفحة الرئيسية <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">القوائم المالية</a></li>
-                        <li><a href="#">الأنطمة والسياسات</a></li>
-                        <li><a href="#">الهيكل النظامى</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right hidden-xs">
-                        <li>
-                            <a href="#"><img class="social img-responsive" src="images/social/1.png" alt=""></a>
-                        </li>
-                        <li>
-                            <a href="#"><img class="social img-responsive" src="images/social/2.png" alt=""></a>
-                        </li>
-                        <li>
-                            <a href="#"><img class="social img-responsive" src="images/social/3.png" alt=""></a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </nav>
-        </div>
-        <!-- /.container-fluid -->
-        <!-- end navbar -->
-        <!-- start logo -->
-        <div class="logo">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4"> <img class=" logo-img img-responsive" src="images/logo.png" alt=""> </div>
-                    <div class="col-md-4 col-md-offset-4"> <img class="text img-responsive" src="images/text.png" alt=""> </div>
-                </div>
-            </div>
-        </div>
-        <!-- end logo -->
-    </header>
-    </div>
-    <!-- end header -->
 
     <!--start new donate-->
     <div class="new-donate">
         <div class="container">
-            <h3>إضافة تبرع جديد</h3>
+            <h3>ﺇﺿﺎﻓﺔ ﺗﺒﺮﻉ ﺟﺪﻳﺪ</h3>
             <div class="row">
                 <form action="" method="post">
 
                     <div class="col-md-6">
                         <div class="col-md-12 cel">
 
-                            <div class="col-md-3"><label for="">الإسم</label></div>
+                            <div class="col-md-3"><label for="">اﻹﺳﻢ</label></div>
                             <div class="col-md-9"><input class="btn-block" type="text"></div>
                         </div>
                         <div class="col-md-12 cel">
 
-                            <div class="col-md-3"><label for="">رقم الجوال</label></div>
+                            <div class="col-md-3"><label for="">ﺭﻗﻢ اﻟﺠﻮاﻝ</label></div>
                             <div class="col-md-9"><input class="btn-block" type="text"></div>
                         </div>
                         <div class="col-md-12 cel">
 
-                            <div class="col-md-3"><label for="">البريد الإلكترونى</label></div>
+                            <div class="col-md-3"><label for="">اﻟﺒﺮﻳﺪ اﻹﻟﻜﺘﺮﻭﻧﻰ</label></div>
                             <div class="col-md-9"><input class="btn-block" type="text"></div>
                         </div>
                         <div class="col-md-12 cel">
 
-                            <div class="col-md-3"><label for="">صندوق بريد</label></div>
+                            <div class="col-md-3"><label for="">ﺻﻨﺪﻭﻕ ﺑﺮﻳﺪ</label></div>
                             <div class="col-md-9"><input class="btn-block" type="text"></div>
                         </div>
                         <div class="col-md-12 cel">
 
-                            <div class="col-md-3"><label for="">اسم البنك</label></div>
+                            <div class="col-md-3"><label for="">اﺳﻢ اﻟﺒﻨﻚ</label></div>
                             <div class="col-md-9">
                                 <select class="btn-block" name="" id="">
-                       <option value="" selected>مصرف الراجحى</option>
-                       <option value="">البنك العربى الوطنى</option>
+                       <option value="" selected>ﻣﺼﺮﻑ اﻟﺮاﺟﺤﻰ</option>
+                       <option value="">اﻟﺒﻨﻚ اﻟﻌﺮﺑﻰ اﻟﻮﻃﻨﻰ</option>
                    </select>
                             </div>
                         </div>
                         <div class="col-md-12 cel">
 
-                            <div class="col-md-3"><label for=""> المبلغ</label></div>
+                            <div class="col-md-3"><label for=""> اﻟﻤﺒﻠﻎ</label></div>
                             <div class="col-md-9"><input class="btn-block" type="text"></div>
                         </div>
                         <div class="col-md-12 cel">
 
-                            <div class="col-md-3"><label for="">طريقة الدفع</label></div>
+                            <div class="col-md-3"><label for="">ﻃﺮﻳﻘﺔ اﻟﺪﻓﻊ</label></div>
                             <div class="col-md-9">
                                 <select class="btn-block" name="" id="">
-                           <option value="">شيك بنكى</option>
-                           <option value="">إيداع بنكى</option>
-                           <option value="">تجويل بنكى</option>
+                           <option value="">ﺷﻴﻚ ﺑﻨﻜﻰ</option>
+                           <option value="">ﺇﻳﺪاﻉ ﺑﻨﻜﻰ</option>
+                           <option value="">ﺗﺠﻮﻳﻞ ﺑﻨﻜﻰ</option>
                        </select>
                             </div>
                         </div>
                         <div class="col-md-12 cel">
 
-                            <div class="col-md-3"><label for=""> اسم المشروع</label></div>
+                            <div class="col-md-3"><label for=""> اﺳﻢ اﻟﻤﺸﺮﻭﻉ</label></div>
                             <div class="col-md-9"><select class="btn-block" name="" id="">
-                       <option value="">إكتفاء</option>
-                       <option value="">إطعام مسكين</option>
-                       <option value="">مبادرة أرامكو السعودية لمشروع برنامج اكتفاء</option>
-                       <option value="">إعاشة اسرة</option>
-                       <option value="">مشاركة في كفالة يتيم</option>
-                       <option value="">دعم برامج التدريب المهني والحرفي للنساء</option>
-                       <option value="">مشروع العيديات والكساوي</option>
-                       <option value="">تفريج كربة </option>
+                       <option value="">ﺇﻛﺘﻔﺎء</option>
+                       <option value="">ﺇﻃﻌﺎﻡ ﻣﺴﻜﻴﻦ</option>
+                       <option value="">ﻣﺒﺎﺩﺭﺓ ﺃﺭاﻣﻜﻮ اﻟﺴﻌﻮﺩﻳﺔ ﻟﻤﺸﺮﻭﻉ ﺑﺮﻧﺎﻣﺞ اﻛﺘﻔﺎء</option>
+                       <option value="">ﺇﻋﺎﺷﺔ اﺳﺮﺓ</option>
+                       <option value="">ﻣﺸﺎﺭﻛﺔ ﻓﻲ ﻛﻔﺎﻟﺔ ﻳﺘﻴﻢ</option>
+                       <option value="">ﺩﻋﻢ ﺑﺮاﻣﺞ اﻟﺘﺪﺭﻳﺐ اﻟﻤﻬﻨﻲ ﻭاﻟﺤﺮﻓﻲ ﻟﻠﻨﺴﺎء</option>
+                       <option value="">ﻣﺸﺮﻭﻉ اﻟﻌﻴﺪﻳﺎﺕ ﻭاﻟﻜﺴﺎﻭﻱ</option>
+                       <option value="">ﺗﻔﺮﻳﺞ ﻛﺮﺑﺔ </option>
                    </select></div>
                         </div>
 
                     </div>
                     <div class="col-md-6">
                         <div class="col-md-12 cel">
-                            <div class="col-md-3"><label for=""> الهوية</label></div>
+                            <div class="col-md-3"><label for=""> اﻟﻬﻮﻳﺔ</label></div>
                             <div class="col-md-9"><input class="btn-block" type="text"></div>
                         </div>
                         <div class="col-md-12 cel">
-                            <div class="col-md-3"><label for=""> رقم العضوية </label></div>
+                            <div class="col-md-3"><label for=""> ﺭﻗﻢ اﻟﻌﻀﻮﻳﺔ </label></div>
                             <div class="col-md-9"><input class="btn-block" type="text"></div>
                         </div>
                         <div class="col-md-12 cel">
-                            <div class="col-md-3"><label for=""> العنوان</label></div>
+                            <div class="col-md-3"><label for=""> اﻟﻌﻨﻮاﻥ</label></div>
                             <div class="col-md-9"><input class="btn-block" type="text"></div>
                         </div>
                         <div class="col-md-12 cel">
 
-                            <div class="col-md-3"><label for="">  اسم الفرع</label></div>
+                            <div class="col-md-3"><label for="">  اﺳﻢ اﻟﻔﺮﻉ</label></div>
                             <div class="col-md-9"><select class="btn-block" name="" id="">
-                       <option value="">المركز الرئيسيى</option>
-                       <option value=""> دار الخير</option>
-                       <option value="">مبرة الاحسان</option>
-                       <option value=""> قسم الأيتام</option>      
+                       <option value="">اﻟﻤﺮﻛﺰ اﻟﺮﺋﻴﺴﻴﻰ</option>
+                       <option value=""> ﺩاﺭ اﻟﺨﻴﺮ</option>
+                       <option value="">ﻣﺒﺮﺓ اﻻﺣﺴﺎﻥ</option>
+                       <option value=""> ﻗﺴﻢ اﻷﻳﺘﺎﻡ</option>      
                    </select></div>
                         </div>
                         <div class="col-md-12 cel">
 
-                            <div class="col-md-3"><label for=""> رقم الحساب</label></div>
+                            <div class="col-md-3"><label for=""> ﺭﻗﻢ اﻟﺤﺴﺎﺏ</label></div>
                             <div class="col-md-9">
                                 <select class="btn-block" name="" id="">
                        <option value="" selected> 0108000787770012</option>
@@ -196,25 +105,25 @@
                         </div>
                         <div class="col-md-12 cel">
 
-                            <div class="col-md-3"><label for=""> العملة </label></div>
+                            <div class="col-md-3"><label for=""> اﻟﻌﻤﻠﺔ </label></div>
                             <div class="col-md-9">
                                 <select class="btn-block" name="" id="">
-                       <option value="" selected> ريال سعودى</option>
-                   <option value="">دولار امريكى</option>
+                       <option value="" selected> ﺭﻳﺎﻝ ﺳﻌﻮﺩﻯ</option>
+                   <option value="">ﺩﻭﻻﺭ اﻣﺮﻳﻜﻰ</option>
                        </select>
                             </div>
                         </div>
                         <div class="col-md-12 cel">
-                            <div class="col-md-3"><label for=""> رقم السند</label></div>
+                            <div class="col-md-3"><label for=""> ﺭﻗﻢ اﻟﺴﻨﺪ</label></div>
                             <div class="col-md-9"><input class="btn-block" type="text"></div>
                         </div>
                         <div class="col-md-12 cel">
-                            <div class="col-md-3"><label for=""> تاريخ صادر</label></div>
+                            <div class="col-md-3"><label for=""> ﺗﺎﺭﻳﺦ ﺻﺎﺩﺭ</label></div>
                             <div class="col-md-9"><input class="btn-block" type="text"></div>
                         </div>
 
                     </div>
-                    <button class="pull-right">حفظ</button>
+                    <button class="pull-right">ﺣﻔﻆ</button>
                 </form>
             </div>
         </div>
@@ -224,7 +133,7 @@
     <div class="bank-section">
         <div class="container">
                 <div class="col-xs-12 col-md-6">
-                    <h4>أرقام حساباتنا لسهوله التحويل على مصرف الراجحي</h4>
+                    <h4>ﺃﺭﻗﺎﻡ ﺣﺴﺎﺑﺎﺗﻨﺎ ﻟﺴﻬﻮﻟﻪ اﻟﺘﺤﻮﻳﻞ ﻋﻠﻰ ﻣﺼﺮﻑ اﻟﺮاﺟﺤﻲ</h4>
                     <h5>0123456789876543210</h5>
                 </div>
                 <div class="col-xs-12 col-md-6">
@@ -239,31 +148,31 @@
             <div class="row">
                 <div class="col-md-3">
                     <ul class="list-unstyled">
-                        <li class="active"><a href="#">الرئيسية</a></li>
-                        <li><a href="#"> عن الجمعية </a></li>
-                        <li><a href="#"> أعضاء مجلس الإدارة </a></li>
-                        <li><a href="#">الأعضاء المؤسسين </a></li>
+                        <li class="active"><a href="#">اﻟﺮﺋﻴﺴﻴﺔ</a></li>
+                        <li><a href="#"> ﻋﻦ اﻟﺠﻤﻌﻴﺔ </a></li>
+                        <li><a href="#"> ﺃﻋﻀﺎء ﻣﺠﻠﺲ اﻹﺩاﺭﺓ </a></li>
+                        <li><a href="#">اﻷﻋﻀﺎء اﻟﻤﺆﺳﺴﻴﻦ </a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <ul class="list-unstyled">
-                        <li><a href="#">أنشطة الجمعية </a> </li>
-                        <li><a href="#">معرض الصور </a></li>
-                        <li><a href="#">معرض الفيديو </a></li>
-                        <li><a href="#">اتصل بنا </a></li>
+                        <li><a href="#">ﺃﻧﺸﻄﺔ اﻟﺠﻤﻌﻴﺔ </a> </li>
+                        <li><a href="#">ﻣﻌﺮﺽ اﻟﺼﻮﺭ </a></li>
+                        <li><a href="#">ﻣﻌﺮﺽ اﻟﻔﻴﺪﻳﻮ </a></li>
+                        <li><a href="#">اﺗﺼﻞ ﺑﻨﺎ </a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <div class="call-us">
-                        <h3><i class="fa fa-phone-square"></i> كن على <span class="color">تواصل </span> معنا </h3>
-                        <p>البريد الإلكترونى : <br><span>brnawan@gmail.com</span></p>
+                        <h3><i class="fa fa-phone-square"></i> ﻛﻦ ﻋﻠﻰ <span class="color">ﺗﻮاﺻﻞ </span> ﻣﻌﻨﺎ </h3>
+                        <p>اﻟﺒﺮﻳﺪ اﻹﻟﻜﺘﺮﻭﻧﻰ : <br><span>brnawan@gmail.com</span></p>
                         <!--               start social-->
                         <div class="social"> <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-1x fa-fw"></i></a> <a href="https://www.twitter.com"><i class="fa fa-twitter fa-1x fa-fw"></i></a> <a href="https://www.instagram.com"><i class="fa fa-instagram fa-1x fa-fw"></i></a> <a href="https://www.youtube.com"><i class="fa fa-youtube-play fa-1x fa-fw"></i></a> <a href="https://www.snapchat.com"><i class="fa fa-snapchat-ghost fa-1x fa-fw"></i></a> </div>
                         <!--                end social-->
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <p class="last">رقم الهاتف : <br><span>050-941-4210</span></p>
+                    <p class="last">ﺭﻗﻢ اﻟﻬﺎﺗﻒ : <br><span>050-941-4210</span></p>
                 </div>
             </div>
         </div>
