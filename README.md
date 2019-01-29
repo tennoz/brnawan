@@ -1,2 +1,2 @@
 # brnawan
-![alt text](https://imgur.com/WsaRbEx "Logo Title Text 1")
+![alt text](https://imgur.com/WsaRbEx.png "Logo Title Text 1")
